@@ -1,0 +1,32 @@
+{
+    "orm.search.applicator": {
+        "class": "\\Ulrack\\OrmExtension\\Component\\Applicator\\Applicator"
+    },
+    "orm.model.factory": {
+        "class": "\\Ulrack\\OrmExtension\\Factory\\ModelFactory",
+        "parameters": {
+            "serviceFactory": "@{invocations.orm.get.service.factory}"
+        }
+    },
+    "orm.collection.factory": {
+        "class": "\\Ulrack\\OrmExtension\\Factory\\CollectionFactory",
+        "parameters": {
+            "modelFactory": "@{services.orm.model.factory}",
+            "serviceFactory": "@{invocations.orm.get.service.factory}"
+        }
+    },
+    "orm.abstract.data.source": {
+        "abstract": true,
+        "class": "\\Ulrack\\OrmExtension\\Component\\DataSource\\DatabaseDataSource",
+        "parameters": {
+            "applicator": "@{services.orm.search.applicator}"
+        }
+    },
+    "orm.default.collection": {
+        "class": "\\Ulrack\\OrmExtension\\Component\\Collection\\Collection",
+        "parameters": {
+            "modelGenerator": "@{template.modelGenerator}",
+            "count": "@{template.count}"
+        }
+    }
+}
