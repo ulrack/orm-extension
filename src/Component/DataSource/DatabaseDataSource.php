@@ -7,19 +7,19 @@
 
 namespace Ulrack\OrmExtension\Component\DataSource;
 
-use Ulrack\Dbal\Sql\Common\ComparatorEnum;
-use Ulrack\Dbal\Common\ConnectionInterface;
-use Ulrack\Dbal\Common\QueryResultInterface;
-use Ulrack\Dbal\Common\QueryFilterGroupInterface;
-use Ulrack\Dbal\Sql\Component\Query\Data\DeleteQuery;
-use Ulrack\Dbal\Sql\Component\Query\Data\InsertQuery;
-use Ulrack\Dbal\Sql\Component\Query\Data\SelectQuery;
-use Ulrack\Dbal\Sql\Component\Query\Data\UpdateQuery;
-use Ulrack\Dbal\Sql\Component\Filter\ComparatorFilter;
-use Ulrack\Dbal\Sql\Component\Filter\QueryFilterGroup;
+use GrizzIt\Dbal\Sql\Common\ComparatorEnum;
+use GrizzIt\Dbal\Common\ConnectionInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\QueryFilterGroupInterface;
+use GrizzIt\Search\Common\SearchCriteriaInterface;
+use GrizzIt\Dbal\Sql\Component\Query\Data\DeleteQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\InsertQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\SelectQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\UpdateQuery;
+use GrizzIt\Dbal\Sql\Component\Filter\ComparatorFilter;
+use GrizzIt\Dbal\Sql\Component\Filter\QueryFilterGroup;
 use Ulrack\OrmExtension\Common\Applicator\ApplicatorInterface;
 use Ulrack\OrmExtension\Common\DataSource\DataSourceInterface;
-use GrizzIt\Search\Common\SearchCriteriaInterface;
 
 class DatabaseDataSource implements DataSourceInterface
 {

@@ -8,8 +8,8 @@
 namespace Ulrack\OrmExtension\Factory;
 
 use Generator;
-use Ulrack\Dbal\Common\QueryResultInterface;
-use Ulrack\Services\Common\ServiceFactoryInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
+use GrizzIt\Services\Common\Factory\ServiceFactoryInterface;
 use Ulrack\OrmExtension\Common\Factory\ModelFactoryInterface;
 use Ulrack\OrmExtension\Common\Collection\CollectionInterface;
 use Ulrack\OrmExtension\Common\Factory\CollectionFactoryInterface;

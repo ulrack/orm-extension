@@ -1,6 +1,0 @@
-{
-    "orm.get.service.factory": {
-        "service": "services.core.service.manager",
-        "method": "getServiceFactory"
-    }
-}

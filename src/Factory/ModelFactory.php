@@ -7,9 +7,8 @@
 
 namespace Ulrack\OrmExtension\Factory;
 
-use Ulrack\Services\Common\ServiceFactoryInterface;
 use Ulrack\OrmExtension\Common\Model\ModelInterface;
-use GrizzIt\ObjectFactory\Common\ObjectFactoryInterface;
+use GrizzIt\Services\Common\Factory\ServiceFactoryInterface;
 use Ulrack\OrmExtension\Common\Factory\ModelFactoryInterface;
 
 class ModelFactory implements ModelFactoryInterface

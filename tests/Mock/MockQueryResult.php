@@ -10,7 +10,7 @@ namespace Ulrack\OrmExtension\Tests\Mock;
 use Traversable;
 use ArrayIterator;
 use IteratorAggregate;
-use Ulrack\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
 
 class MockQueryResult implements IteratorAggregate, QueryResultInterface
 {

@@ -19,16 +19,18 @@ through configuration. Create a service file in the `configurtion/services`
 directory for the data source and add the following content:
 ```json
 {
-    "data.source.books": {
-        "parent": "orm.abstract.data.source",
-        "parameters": {
-            "connection": "@{database-connections.main}",
-            "table": "book",
-            "fields": [
-                "id",
-                "title",
-                "author"
-            ]
+    "services": {
+        "data.source.books": {
+            "parent": "orm.abstract.data.source",
+            "parameters": {
+                "connection": "@{database-connections.main}",
+                "table": "book",
+                "fields": [
+                    "id",
+                    "title",
+                    "author"
+                ]
+            }
         }
     }
 }
@@ -47,10 +49,12 @@ an entry. First, create a service definition for the model for later use.
 
 ```json
 {
-    "model.book": {
-        "class": "\\MyVendor\\MyProject\\Model\\BookModel",
-        "parameters": {
-            "data": "@{template.data}"
+    "services": {
+        "model.book": {
+            "class": "\\MyVendor\\MyProject\\Model\\BookModel",
+            "parameters": {
+                "data": "@{template.data}"
+            }
         }
     }
 }
@@ -168,13 +172,15 @@ the application.
 Start, by adding the following service definition, to your services file:
 ```json
 {
-    "repository.books": {
+    "services": {
+        "repository.books": {
         "class": "\\MyVendor\\MyProject\\Repository\\BookRepository",
-        "parameters": {
-            "modelService": "services.model.book",
-            "collectionService": "services.orm.default.collection",
-            "collectionFactory": "@{services.orm.collection.factory}",
-            "dataSource": "@{services.data.source.books}"
+            "parameters": {
+                "modelService": "services.model.book",
+                "collectionService": "services.orm.default.collection",
+                "collectionFactory": "@{services.orm.collection.factory}",
+                "dataSource": "@{services.data.source.books}"
+            }
         }
     }
 }

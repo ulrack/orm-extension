@@ -7,7 +7,7 @@
 
 namespace Ulrack\OrmExtension\Common\Applicator;
 
-use Ulrack\Dbal\Common\QueryInterface;
+use GrizzIt\Dbal\Common\QueryInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
 
 interface ApplicatorInterface

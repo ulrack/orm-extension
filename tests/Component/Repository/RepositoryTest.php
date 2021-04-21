@@ -8,7 +8,7 @@
 namespace Ulrack\OrmExtension\Tests\Component\Repository;
 
 use PHPUnit\Framework\TestCase;
-use Ulrack\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
 use Ulrack\OrmExtension\Tests\Mock\MockRepository;
 use Ulrack\OrmExtension\Common\Collection\CollectionInterface;

@@ -9,9 +9,7 @@ namespace Ulrack\OrmExtension\Component\Collection;
 
 use Iterator;
 use Generator;
-use Ulrack\Dbal\Common\QueryResultInterface;
 use Ulrack\OrmExtension\Common\Model\ModelInterface;
-use Ulrack\OrmExtension\Common\Factory\ModelFactoryInterface;
 use Ulrack\OrmExtension\Common\Collection\CollectionInterface;
 
 class Collection implements Iterator, CollectionInterface

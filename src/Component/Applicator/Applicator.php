@@ -7,20 +7,20 @@
 
 namespace Ulrack\OrmExtension\Component\Applicator;
 
-use Ulrack\Dbal\Common\QueryInterface;
+use GrizzIt\Dbal\Common\QueryInterface;
 use GrizzIt\Search\Common\DirectionEnum;
 use GrizzIt\Search\Common\ComparatorEnum;
 use GrizzIt\Search\Common\FilterInterface;
-use Ulrack\Dbal\Common\Enum\SortDirectionEnum;
-use Ulrack\Dbal\Common\PageableQueryInterface;
-use Ulrack\Dbal\Common\SortableQueryInterface;
+use GrizzIt\Dbal\Common\Enum\SortDirectionEnum;
+use GrizzIt\Dbal\Common\PageableQueryInterface;
+use GrizzIt\Dbal\Common\SortableQueryInterface;
 use GrizzIt\Search\Common\FilterGroupInterface;
-use Ulrack\Dbal\Common\FilterableQueryInterface;
+use GrizzIt\Dbal\Common\FilterableQueryInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
-use Ulrack\Dbal\Sql\Component\Filter\ComparatorFilter;
-use Ulrack\Dbal\Sql\Component\Filter\QueryFilterGroup;
+use GrizzIt\Dbal\Sql\Component\Filter\ComparatorFilter;
+use GrizzIt\Dbal\Sql\Component\Filter\QueryFilterGroup;
 use Ulrack\OrmExtension\Common\Applicator\ApplicatorInterface;
-use Ulrack\Dbal\Sql\Common\ComparatorEnum as SqlComparatorEnum;
+use GrizzIt\Dbal\Sql\Common\ComparatorEnum as SqlComparatorEnum;
 
 class Applicator implements ApplicatorInterface
 {

@@ -12,8 +12,8 @@ use ArrayIterator;
 use PHPUnit\Framework\TestCase;
 use Ulrack\OrmExtension\Factory\CollectionFactory;
 use Ulrack\OrmExtension\Tests\Mock\MockQueryResult;
-use Ulrack\Services\Common\ServiceFactoryInterface;
 use Ulrack\OrmExtension\Common\Model\ModelInterface;
+use GrizzIt\Services\Common\Factory\ServiceFactoryInterface;
 use Ulrack\OrmExtension\Common\Factory\ModelFactoryInterface;
 use Ulrack\OrmExtension\Common\Collection\CollectionInterface;
 

@@ -15,7 +15,7 @@ use GrizzIt\Search\Common\FilterInterface;
 use GrizzIt\Search\Common\SorterInterface;
 use GrizzIt\Search\Common\FilterGroupInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
-use Ulrack\Dbal\Sql\Component\Query\Data\SelectQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\SelectQuery;
 use Ulrack\OrmExtension\Component\Applicator\Applicator;
 
 /**

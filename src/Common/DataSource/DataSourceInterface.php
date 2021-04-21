@@ -7,7 +7,7 @@
 
 namespace Ulrack\OrmExtension\Common\DataSource;
 
-use Ulrack\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
 
 interface DataSourceInterface
@@ -71,7 +71,7 @@ interface DataSourceInterface
      *
      * @return QueryResultInterface
      */
-    public function getByField(string $field, $value): QueryResultInterface;
+    public function getByField(string $field, mixed $value): QueryResultInterface;
 
     /**
      * Updates a data source based on a field.
@@ -84,7 +84,7 @@ interface DataSourceInterface
      */
     public function updateByField(
         string $field,
-        $value,
+        mixed $value,
         array $data
     ): QueryResultInterface;
 
@@ -98,6 +98,6 @@ interface DataSourceInterface
      */
     public function deleteByField(
         string $field,
-        $value
+        mixed $value
     ): QueryResultInterface;
 }

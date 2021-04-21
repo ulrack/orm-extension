@@ -7,7 +7,7 @@
 
 namespace Ulrack\OrmExtension\Component\Repository;
 
-use Ulrack\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
 use GrizzIt\Search\Component\Criteria\SearchCriteria;
 use Ulrack\OrmExtension\Common\Collection\CollectionInterface;

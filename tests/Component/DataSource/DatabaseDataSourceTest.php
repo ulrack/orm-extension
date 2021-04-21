@@ -8,13 +8,13 @@
 namespace Ulrack\OrmExtension\Tests\Component\DataSource;
 
 use PHPUnit\Framework\TestCase;
-use Ulrack\Dbal\Common\ConnectionInterface;
-use Ulrack\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\ConnectionInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
 use GrizzIt\Search\Common\SearchCriteriaInterface;
-use Ulrack\Dbal\Sql\Component\Query\Data\DeleteQuery;
-use Ulrack\Dbal\Sql\Component\Query\Data\InsertQuery;
-use Ulrack\Dbal\Sql\Component\Query\Data\SelectQuery;
-use Ulrack\Dbal\Sql\Component\Query\Data\UpdateQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\DeleteQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\InsertQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\SelectQuery;
+use GrizzIt\Dbal\Sql\Component\Query\Data\UpdateQuery;
 use Ulrack\OrmExtension\Common\Applicator\ApplicatorInterface;
 use Ulrack\OrmExtension\Component\DataSource\DatabaseDataSource;
 

@@ -7,7 +7,7 @@
 
 namespace Ulrack\OrmExtension\Common\Factory;
 
-use Ulrack\Dbal\Common\QueryResultInterface;
+use GrizzIt\Dbal\Common\QueryResultInterface;
 use Ulrack\OrmExtension\Common\Collection\CollectionInterface;
 
 interface CollectionFactoryInterface

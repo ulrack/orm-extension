@@ -9,8 +9,8 @@ namespace Ulrack\OrmExtension\Tests\Factory;
 
 use PHPUnit\Framework\TestCase;
 use Ulrack\OrmExtension\Factory\ModelFactory;
-use Ulrack\Services\Common\ServiceFactoryInterface;
 use Ulrack\OrmExtension\Common\Model\ModelInterface;
+use GrizzIt\Services\Common\Factory\ServiceFactoryInterface;
 
 /**
  * @coversDefaultClass \Ulrack\OrmExtension\Factory\ModelFactory
