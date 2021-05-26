@@ -24,6 +24,7 @@
             }
         },
         "orm.default.collection": {
+            "cache": false,
             "class": "\\Ulrack\\OrmExtension\\Component\\Collection\\Collection",
             "parameters": {
                 "modelGenerator": "@{parameters.modelGenerator}",

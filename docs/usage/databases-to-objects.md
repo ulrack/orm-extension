@@ -51,6 +51,7 @@ an entry. First, create a service definition for the model for later use.
 {
     "services": {
         "model.book": {
+            "cache": false,
             "class": "\\MyVendor\\MyProject\\Model\\BookModel",
             "parameters": {
                 "data": "@{parameters.data}"
