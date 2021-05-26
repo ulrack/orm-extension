@@ -26,8 +26,8 @@
         "orm.default.collection": {
             "class": "\\Ulrack\\OrmExtension\\Component\\Collection\\Collection",
             "parameters": {
-                "modelGenerator": "@{template.modelGenerator}",
-                "count": "@{template.count}"
+                "modelGenerator": "@{parameters.modelGenerator}",
+                "count": "@{parameters.count}"
             }
         }
     }

@@ -53,7 +53,7 @@ an entry. First, create a service definition for the model for later use.
         "model.book": {
             "class": "\\MyVendor\\MyProject\\Model\\BookModel",
             "parameters": {
-                "data": "@{template.data}"
+                "data": "@{parameters.data}"
             }
         }
     }
