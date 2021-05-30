@@ -74,6 +74,7 @@ class Applicator implements ApplicatorInterface
         FilterGroupInterface $filterGroup
     ): void {
         $queryFilterGroup = new QueryFilterGroup();
+        $filterAdded = false;
         foreach ($filterGroup->getFilters() as $filter) {
             if ($filter instanceof FilterGroupInterface) {
                 $this->applyFilterGroup($query, $filter);
@@ -90,8 +91,11 @@ class Applicator implements ApplicatorInterface
                     $comparator()
                 )
             );
+            $filterAdded = true;
         }
 
-        $query->addFilterGroup($queryFilterGroup);
+        if ($filterAdded) {
+            $query->addFilterGroup($queryFilterGroup);
+        }
     }
 }
